@@ -31,6 +31,7 @@ section {
 
 .container {
   padding: 50px 0;
+  width: 100%;
 }
 
 .row {
@@ -284,5 +285,41 @@ PROJECTS
 
 .project__description--para {
   margin: 16px 0;
+}
 
+/*
+
+FOOTER
+
+*/
+
+footer {
+  background-color: #e3e7d3;
+  display: flex;
+  padding: 6% 0;
+}
+
+.footer__row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__logo--img {
+  width: 70px;
+  height: 70px;
+  border-radius: 16%;
+}
+
+.footer__social--list {
+width: 100%;
+max-width: 500px;
+display: flex;
+justify-content: space-around;
+margin: 20px 0;
+}
+
+.footer__social--link,
+.footer__copyright {
+color: rgb(84, 182, 149);
 }
