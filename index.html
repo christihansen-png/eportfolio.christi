@@ -4,9 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Christina Moore</title>
-  <script src="app.js"></script>
   <link rel="stylesheet" href="styles.css">
   <script class="fa-adjust" src="https://kit.fontawesome.com/f5922447fa.js" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+ <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "sCCKszcb11RlWnO4K",
+      });
+   })();
+</script>
 </head>
 <body>
   <section id="landing-page">
@@ -47,14 +57,14 @@
     </nav>
     <header class="header">
       <div class="header__content">
-        <h1 class="title">Hey</h1>
+        <h1 class="title"><b class="bold__color">Howdy</b></h1>
         <h1 class="title__secondary">I'm Christi</h1>
         <p class="header__para"><b class="bold__color">About Me</b>, I didn't start in tech — I started behind a register. But 20 years of solving problems on the fly turned out to be great training for debugging code. Today, I'm a <b class="bold__color">Frontend Software Engineer</b>, building interfaces instead of ringing them up.</p>
         <div class="social__list">
           <a href="https://google.com" target="_blank" class="social__link click">
             <i class="fa-brands fa-linkedin-in"></i>
           </a>
-          <a href="https://github.com@christihansen-png" target="_blank" class="social__link click">
+          <a href="https://github.com/christihansen-png" target="_blank" class="social__link click">
             <i class="fa-brands fa-github-alt"></i>
           </a>
           <a href="Christina_Moore_Resume.docx" target="_blank" class="social__link click">
@@ -70,6 +80,75 @@
         <div class="scroll__icon click">
         </div>
       </a>
+      <div class="modal">
+        <div class="modal__half modal__about">
+          <h3 class="modal__title">Here's a bit more about me</h3>
+          <h4 class="modal__sub-title">Frontend Software Engineer</h4>
+          <p class="modal__para">I'm Christi, a <b class="bold__color--modal">Frontend Software Engineer</b> with a laser focus on how <b class="bold__color--modal">users experience</b> what I build. Twenty years running retail operations taught me to notice the small stuff that makes or breaks someone's experience — I bring that same obsessive <b class="bold__color--modal">attention to detail</b>  into every pixel and every line of code. <b class="bold__color--modal">I don't quit</b> until it's right, and "it's basically working" has never been good enough for me. If there's a bug, I'll find it. If there's a rough edge, I'll smooth it. That same <b class="bold__color--modal">relentless drive</b> now powers how I build.</p>
+          <div class="modal__langs">
+            <figure class="modal__lang">
+              <i class="fa-brands fa-square-js"></i>
+              <span class="language__name">JavaScript</span>
+            </figure>
+            <figure class="modal__lang">
+              <i class="fa-brands fa-claude"></i>
+              <span class="language__name">Claude</span>  
+            </figure>
+            <figure class="modal__lang">
+              <i class="fa-brands fa-apple"></i>
+              <span class="language__name">iMac</span>          
+            </figure>
+            <figure class="modal__lang">
+              <i class="fa-brands fa-web-awesome"></i>
+              <span class="language__name">Fa-web-awesome</span>          
+            </figure>
+            <figure class="modal__lang">
+              <i class="fa-brands fa-font-awesome"></i>
+              <span class="language__name">Font-awesome</span>          
+            </figure>
+            <figure class="modal__lang">
+              <i class="fa-brands fa-google"></i>
+              <span class="language__name">Google</span> 
+            </figure>
+            <figure class="modal__lang">   
+              <i class="fa-brands fa-react"></i>
+              <span class="language__name">React</span>          
+            </figure>
+            <figure class="modal__lang">
+              <i class="fa-solid fa-laptop-code"></i>
+              <span class="language__name">HTML/CSS</span>         
+            </figure>
+          </div>
+        </div>
+        <div class="modal__half modal__contact">
+          <h3 class="modal__title--contact">Let's have a chat!</h3>
+          <h4 class="modal__sub-title--contact">I'm currently open to new opportunities.</h4>
+          <form id="contact__form" onsubmit="contact(event)">
+            <div class="form__item">
+              <label class="form__item--label" for="name">Name</label>
+              <input class="input" name="user_name" type="text" required></input>
+            </div>
+             <div class="form__item">
+              <label class="form__item--label">Email</label>
+              <input class="input" name="user_email" type="text" required></input>
+            </div>
+             <div class="form__item">
+              <label class="form__item--label" for="message">Message</label>
+              <textarea class="input" name="message" type="text" required></textarea>
+            </div>
+            <button id="contact__submit" class="form__submit">
+              Send it my way!
+            </button>
+          </form>
+          <div class="modal__overlay modal__overlay--loading">
+            <i class="fas fa-spinner"></i>
+          </div>
+          <h1 class="modal__overlay modal__overlay--success">
+            <b class="bold__color">I'm excited!</b> I will get back to you shortly.
+          </h1>
+        </div>
+        <i class="fas fa-times modal__exit click"></i>
+      </div>
   </section>
   <section id="projects">
     <div class="container">
@@ -101,7 +180,6 @@
                     <i class="fas fa-link"></i>
                   </a>
                 </div>
-                </div>
               </div>
             </div>
           </li>
@@ -127,7 +205,6 @@
                   <a href="#" class="project__description--link">
                     <i class="fas fa-link"></i>
                   </a>
-                </div>
                 </div>
               </div>
             </div>
@@ -155,7 +232,6 @@
                     <i class="fas fa-link"></i>
                   </a>
                 </div>
-                </div>
               </div>
             </div>
           </li>
@@ -182,12 +258,10 @@
                     <i class="fas fa-link"></i>
                   </a>
                 </div>
-                </div>
               </div>
             </div>
           </li>
         </ul>
-      </div>
     </div>
   </section>
   <footer>
@@ -197,31 +271,31 @@
          <img class="footer__logo--img" src="assets/cm__logo.jpg" alt="">
         </figure>
       <div class="footer__social--list">
-        <a href="#" class="
+        <a href="https://github.com/christihansen-png" class="
         footer__social--link
-        liver__hover-effect
-        liver__hover-effect--white
+        link__hover-effect
+        link__hover-effect--white
         ">
         Github
         </a>
         <a href="#" class="
         footer__social--link
-        liver__hover-effect
-        liver__hover-effect--white
+        link__hover-effect
+        link__hover-effect--white
         ">
         LinkIn
         </a>
         <a href="#" class="
          footer__social--link
-         liver__hover-effect
-         liver__hover-effect--white
+         link__hover-effect
+         link__hover-effect--white
          ">
           Contact
         </a>
-        <a href="#" class="
+        <a href="Christina_Moore_Resume.docx" class="
          footer__social--link
-         liver__hover-effect
-         liver__hover-effect--white
+         link__hover-effect
+         link__hover-effect--white
          ">
           Resume
         </a>
