@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Christina Moore</title>
+  <title>Christi Hansen | Frontend Developer</title>
+  <meta name="description" content="Christi Hansen, frontend developer building websites with HTML, CSS, JavaScript and React.">
+  <link rel="icon" href="./assets/favicon.ico">
   <link rel="stylesheet" href="styles.css">
   <script class="fa-adjust" src="https://kit.fontawesome.com/f5922447fa.js" crossorigin="anonymous"></script>
   <script src="index.js"></script>
@@ -23,36 +25,20 @@
   <section id="landing-page" onmousemove="moveBackground(event)">
     <nav>
       <figure>
-          <img id="personal-logo" src="./assets/cm__logo.jpg" alt="logo">
+          <img id="personal-logo" src="./assets/cm__logo.jpg" alt="Christi Hansen logo">
         </figure>
         <ul class="nav__link--list">
-          <li class="nav__link click" onclick="toggleModal()">
-          <a href="#" class="
-          nav__link--anchor
-          link__hover-effect
-          link__hover-effect--black">About</a>
-        </li>
-        <ul class="nav__link--list">
-        <li class="nav__link click">
-          <a href="#projects" class="
-          nav__link--anchor
-          link__hover-effect
-          link__hover-effect--black">Projects</a>
-        </li>
-        <ul class="nav__link--list">
         <li class="nav__link click" onclick="toggleModal()">
-          <a href="#" class="
-          nav__link--anchor
-          link__hover-effect
-          link__hover-effect--black">Contact</a>
+          <a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black">About</a>
         </li>
-         </li>
-        <ul class="nav__link--list">
+        <li class="nav__link click">
+          <a href="#projects" class="nav__link--anchor link__hover-effect link__hover-effect--black">Projects</a>
+        </li>
+        <li class="nav__link click" onclick="toggleModal()">
+          <a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black">Contact</a>
+        </li>
         <li class="nav__link click" onclick="toggleContrast()">
-          <a href="#" class="
-          nav__link--anchor
-          link__hover-effect
-          link__hover-effect--black"><i class="fa-solid fa-circle-half-stroke"></i></a>
+          <a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black" aria-label="Toggle dark mode"><i class="fa-solid fa-circle-half-stroke"></i></a>
         </li>
       </ul>
     </nav>
@@ -62,13 +48,13 @@
         <h1 class="title__secondary">I'm Christi</h1>
         <p class="header__para"><b class="bold__color click" onclick="toggleModal()">About Me</b>, I didn't start in tech — I started behind a register. But 20 years of solving problems on the fly turned out to be great training for debugging code. Today, I'm a <b class="bold__color">Frontend Software Engineer</b>, building interfaces instead of ringing them up.</p>
         <div class="social__list">
-          <a href="https://google.com" target="_blank" class="social__link click">
+          <a href="https://www.linkedin.com/in/christina-hansen-moore-bba62b43a/" target="_blank" class="social__link click" aria-label="LinkedIn">
             <i class="fa-brands fa-linkedin-in"></i>
           </a>
-          <a href="https://github.com/christihansen-png" target="_blank" class="social__link click">
+          <a href="https://github.com/christihansen-png" target="_blank" class="social__link click" aria-label="GitHub">
             <i class="fa-brands fa-github-alt"></i>
           </a>
-          <a href="Christina_Moore_Resume.docx" target="_blank" class="social__link click">
+          <a href="resume.html" target="_blank" class="social__link click" aria-label="Resume">
           <i class="fa-regular fa-file"></i>
           </a>
         </div>
@@ -88,36 +74,36 @@
           <p class="modal__para">I'm Christi, a <b class="bold__color--modal">Frontend Software Engineer</b> with a laser focus on how <b class="bold__color--modal">users experience</b> what I build. Twenty years running retail operations taught me to notice the small stuff that makes or breaks someone's experience — I bring that same obsessive <b class="bold__color--modal">attention to detail</b>  into every pixel and every line of code. <b class="bold__color--modal">I don't quit</b> until it's right, and "it's basically working" has never been good enough for me. If there's a bug, I'll find it. If there's a rough edge, I'll smooth it. That same <b class="bold__color--modal">relentless drive</b> now powers how I build.</p>
           <div class="modal__langs">
             <figure class="modal__lang">
+              <i class="fa-brands fa-html5"></i>
+              <span class="language__name">HTML</span>
+            </figure>
+            <figure class="modal__lang">
+              <i class="fa-brands fa-css3-alt"></i>
+              <span class="language__name">CSS</span>
+            </figure>
+            <figure class="modal__lang">
               <i class="fa-brands fa-square-js"></i>
               <span class="language__name">JavaScript</span>
             </figure>
             <figure class="modal__lang">
-              <i class="fa-brands fa-claude"></i>
-              <span class="language__name">Claude</span>  
-            </figure>
-            <figure class="modal__lang">
-              <i class="fa-brands fa-apple"></i>
-              <span class="language__name">iMac</span>          
-            </figure>
-            <figure class="modal__lang">
-              <i class="fa-brands fa-web-awesome"></i>
-              <span class="language__name">Fa-web-awesome</span>          
-            </figure>
-            <figure class="modal__lang">
-              <i class="fa-brands fa-font-awesome"></i>
-              <span class="language__name">Font-awesome</span>          
-            </figure>
-            <figure class="modal__lang">
-              <i class="fa-brands fa-google"></i>
-              <span class="language__name">Google</span> 
-            </figure>
-            <figure class="modal__lang">   
               <i class="fa-brands fa-react"></i>
-              <span class="language__name">React</span>          
+              <span class="language__name">React</span>
             </figure>
             <figure class="modal__lang">
-              <i class="fa-solid fa-laptop-code"></i>
-              <span class="language__name">HTML/CSS</span>         
+              <i class="fa-solid fa-mobile-screen"></i>
+              <span class="language__name">Responsive Design</span>
+            </figure>
+            <figure class="modal__lang">
+              <i class="fa-solid fa-plug"></i>
+              <span class="language__name">APIs</span>
+            </figure>
+            <figure class="modal__lang">
+              <i class="fa-brands fa-git-alt"></i>
+              <span class="language__name">Git</span>
+            </figure>
+            <figure class="modal__lang">
+              <i class="fa-brands fa-github"></i>
+              <span class="language__name">GitHub</span>
             </figure>
           </div>
         </div>
@@ -177,10 +163,10 @@
                   Handyman <span class="bold__color">Projects</span>
                 </h3>
                 <h4 class="project__description--sub-title">
-                  HTML, CSS, Javascript, Vue, Vuex
+                  Concept Site · HTML, CSS, JavaScript, React
                 </h4>
                 <p class="project__description--para">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel aliquid ex atque tempore quibusdam itaque commodi adipisci dignissimos. Repellendus cum similique, adipisci possimus cumque optio totam libero tenetur assumenda. Unde.
+                  A website that turns visitors into booked jobs: a clear list of services, before-and-after photos, customer reviews, and a "Request a Quote" button on every page. Customers can call you with one tap on their phone, and I set up your Google Business listing so neighbors find you first.
                 </p>
                 <div class="project__description--links">
                   <a href="#" class="project__description--link">
@@ -203,10 +189,10 @@
                   Estate Management <span class="bold__color">Projects</span>
                 </h3>
                 <h4 class="project__description--sub-title">
-                  HTML, CSS, Javascript, Vue, Vuex
+                  Concept Site · HTML, CSS, JavaScript, React
                 </h4>
                 <p class="project__description--para">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel aliquid ex atque tempore quibusdam itaque commodi adipisci dignissimos. Repellendus cum similique, adipisci possimus cumque optio totam libero tenetur assumenda. Unde.
+                  A polished site that builds trust with property owners: a services overview, team bios, an easy inquiry form, and listings you can update yourself. A clean, professional look that matches the quality of your work, plus a Google Business listing so you show up in local searches.
                 </p>
                 <div class="project__description--links">
                   <a href="#" class="project__description--link">
@@ -226,13 +212,13 @@
               </div>
               <div class="div project__description">
                 <h3 class="project__description--title">
-                  Rental Home <span class="bold__color">Projects</span>
+                  Gift Shop <span class="bold__color">Projects</span>
                 </h3>
                 <h4 class="project__description--sub-title">
-                  HTML, CSS, Javascript, Vue, Vuex
+                  Concept Site · HTML, CSS, JavaScript, React
                 </h4>
                 <p class="project__description--para">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel aliquid ex atque tempore quibusdam itaque commodi adipisci dignissimos. Repellendus cum similique, adipisci possimus cumque optio totam libero tenetur assumenda. Unde.
+                  A cozy online storefront for small gift shops, with e-gift cards that bring in easy profits. Customers can buy and send a gift card any time of day, perfect for last-minute holiday shoppers, and you get paid up front. Includes featured products, store hours, a map and Google Business setup so local shoppers find you first.
                 </p>
                 <div class="project__description--links">
                   <a href="#" class="project__description--link">
@@ -255,10 +241,10 @@
                   Lawn Care <span class="bold__color">Projects</span>
                 </h3>
                 <h4 class="project__description--sub-title">
-                  HTML, CSS, Javascript, Vue, Vuex
+                  Concept Site · HTML, CSS, JavaScript, React
                 </h4>
                 <p class="project__description--para">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel aliquid ex atque tempore quibusdam itaque commodi adipisci dignissimos. Repellendus cum similique, adipisci possimus cumque optio totam libero tenetur assumenda. Unde.
+                  A site that grows your client list: seasonal service packages, a map of the areas you serve, photos of finished yards, and a quick quote form. Reviews are front and center, and a Google Business listing helps nearby customers find you first.
                 </p>
                 <div class="project__description--links">
                   <a href="#" class="project__description--link">
@@ -272,13 +258,14 @@
             </div>
           </li>
         </ul>
+      </div>
     </div>
   </section>
   <footer>
     <div class="container">
       <div class="row footer__row">
         <figure>
-         <img class="footer__logo--img" src="assets/cm__logo.jpg" alt="">
+         <img class="footer__logo--img" src="assets/cm__logo.jpg" alt="Christi Hansen logo">
         </figure>
       <div class="footer__social--list">
         <a href="https://github.com/christihansen-png" target="_blank" class="
@@ -288,7 +275,7 @@
         ">
         Github
         </a>
-        <a href="https://www.linkedin.com/in/christina-hansen-moore-bba62b43a/"target="_blank" class="
+        <a href="https://www.linkedin.com/in/christina-hansen-moore-bba62b43a/" target="_blank" class="
         footer__social--link
         link__hover-effect
         link__hover-effect--white
@@ -310,10 +297,9 @@
           Resume
         </a>
       </div>
-      <div class="footer__copyright">Copyright <i class="fa-solid fa-copyright"></i> Christina Hansen </div>
+      <div class="footer__copyright">Copyright <i class="fa-solid fa-copyright"></i> 2026 Christi Hansen</div>
+      </div>
     </div>
-</div>
-</div>
   </footer>
 </body>
 </html>
