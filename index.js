@@ -38,7 +38,7 @@ function contact(event) {
     "service_beautiful",
     "template_h4ftgzz",
     event.target,
-    'sCCKszcb11RlWnO4K'
+    'BTkhjk-8XBvZ_yBUr'
   ).then(() => {
     loading.classList.remove("modal__overlay--visible");
     success.classList += " modal__overlay--visible";
