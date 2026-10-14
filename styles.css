@@ -265,6 +265,9 @@ LANDING PAGE
   }
 }
 
+.studio__icon {
+  width: 24px;
+}
 
 
 /* 
@@ -636,6 +639,7 @@ footer {
 .footer__copyright {
   color: rgb(84, 182, 149);
 }
+
 
 /*
 
