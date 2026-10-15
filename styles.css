@@ -567,6 +567,8 @@ PROJECTS
   transition: opacity 300ms, transform 450ms ease;
   color: white;
   max-width: 550px;
+  padding: 8px;
+  justify-content: center;
 }
 
 .project_-wrapper:hover .project__wrapper--background {
@@ -600,6 +602,7 @@ PROJECTS
 
 .project__description--para {
   margin: 16px 0;
+
 }
 
 /*
