@@ -44,7 +44,7 @@ function contact(event) {
     success.classList += " modal__overlay--visible";
   }).catch(() => {
     alert(
-      "The email service is temporarily unavailable. Please contact me directly on your_beautiful@yahoo.com"
+      "The email service is temporarily unavailable. Please contact me directly on code26beautifulyou@gmail.com"
     );
   })
 }
