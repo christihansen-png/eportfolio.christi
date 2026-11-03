@@ -9,7 +9,7 @@
   <link rel="icon" href="butterfly copy.png">
   <link rel="stylesheet" href="styles.css">
   <script class="fa-adjust" src="https://kit.fontawesome.com/f5922447fa.js" crossorigin="anonymous"></script>
-  <script src="index.js"></script>
+  <script src="index.js" defer></script>
  <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
 </script>
@@ -63,10 +63,6 @@
       <button class="mail__btn click" onclick="toggleModal()">
         <i class="fa-solid fa-at"></i>
       </button>
-      <a href="#projects" class="scroll">
-        <div class="scroll__icon click">
-        </div>
-      </a>
       <div class="modal">
         <div class="modal__half modal__about">
           <h3 class="modal__title">Here's a bit more about me</h3>
@@ -202,24 +198,24 @@
           </li>
           <li class="project">
             <div class="project__wrapper">
-              <img src="./assets/blinker mockup.png" class="project__img" alt="">
+              <img src="./assets/christitube-preview.png" class="project__img" alt="ChristiTube YouTube clone home page">
               <div class="project__wrapper--background">
               </div>
               <div class="div project__description">
                 <h3 class="project__description--title">
-                  Estate Management <span class="bold__color">Projects</span>
+                  Christi<span class="bold__color">Tube</span>
                 </h3>
                 <h4 class="project__description--sub-title">
-                  Concept Site · HTML, CSS, JavaScript, React
+                  YouTube Clone · React, YouTube Data API
                 </h4>
                 <p class="project__description--para">
-                  A polished site that builds trust with property owners: a services overview, team bios, an easy inquiry form, and listings you can update yourself. A clean, professional look that matches the quality of your work, plus a Google Business listing so you show up in local searches.
+                  A YouTube-style app built with React and Vite that pulls live data from the YouTube Data API: trending videos by category, an embedded player, view counts, channel info and real comments. Uses React Router for pages, keeps the API key safe with environment variables, and is deployed on Vercel. 🎬
                 </p>
                 <div class="project__description--links">
-                  <a href="#" class="project__description--link">
+                  <a href="https://github.com/christihansen-png/youtube-clone" class="project__description--link" target="_blank">
                     <i class="fa-brands fa-github-alt"></i>
                   </a>
-                  <a href="#" class="project__description--link">
+                  <a href="https://youtube-clone-ten-psi-37.vercel.app/" class="project__description--link" target="_blank">
                     <i class="fas fa-link"></i>
                   </a>
                 </div>

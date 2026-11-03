@@ -57,3 +57,15 @@ function toggleModal(){
   isModalOpen = true;
   document.body.classList += " modal--open";
 }
+
+// Show each project's title when the card is mostly on screen
+// (only shows on phones/tablets: the CSS for .in-view is inside the 768px media query)
+const projectCards = document.querySelectorAll(".project__wrapper");
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    entry.target.classList.toggle("in-view", entry.isIntersecting);
+  });
+}, { threshold: 0.6 });
+
+projectCards.forEach((card) => observer.observe(card));

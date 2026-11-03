@@ -7,6 +7,10 @@
   font-family: 'Roboto', sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -175,16 +179,18 @@ LANDING PAGE
 
 #landing-page {
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
+/* Header sits BELOW the nav and centers in the space that's left,
+   so "Howdy" can never slide up over the nav on any screen */
 .header {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
+  margin: auto;
   width: 100%;
   max-width: 1000px;
-  padding: 0 40px;
+  padding: 40px 40px 100px;
   z-index: 1;
 }
 
@@ -719,6 +725,19 @@ large smart phones
   .header__para {
     font-size: 20px;;
   }
+
+  .header {
+    padding: 24px 24px 100px;
+  }
+
+  /* Smaller @ button on tablets */
+  .mail__btn {
+    width: 56px;
+    height: 56px;
+    font-size: 26px;
+    bottom: 24px;
+    right: 24px;
+  }
   .modal {
     top: 0;
     left: 0;
@@ -752,6 +771,16 @@ large smart phones
     margin-bottom: 12px;
   }
 
+  /* Phones/tablets have no hover, so show the title when the card scrolls into view */
+  .project__wrapper.in-view .project__description {
+    opacity: 1;
+    transform: translateY(-50%);
+  }
+  .project__wrapper.in-view .project__img {
+    transform: scale(1.07);
+    filter: blur(5px);
+  }
+
   /* Hide the floating shapes so they don't cover text on small screens */
   .shape {
     display: none;
@@ -769,6 +798,15 @@ large smart phones
     font-size: 18px;
   }
 
+  /* Even smaller @ button on phones */
+  .mail__btn {
+    width: 48px;
+    height: 48px;
+    font-size: 22px;
+    bottom: 16px;
+    right: 16px;
+  }
+
 .nav__link:first-child {
   display: none;
 }
@@ -776,6 +814,6 @@ large smart phones
   padding: 40px;
 }
 nav {
-    padding: 80px;
+    padding: 0 16px;
   }
 }
