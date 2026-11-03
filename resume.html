@@ -77,10 +77,13 @@
     margin-bottom: .35rem;
   }
 
+  .job-meta a { color: var(--green); }
+  .job-meta a:hover { text-decoration: underline; }
+
   @media print {
     body { background: white; color: black; padding: 0; }
     h1, h2, .job-meta { color: black; text-shadow: none; }
-    .contact a { color: black; }
+    .contact a, .job-meta a { color: black; }
     h2 { border-bottom: 1px solid #888; }
   }
 </style>
@@ -90,9 +93,9 @@
 
   <header>
     <h1>Christi Hansen</h1>
-    <p class="role">Frontend Software Engineer</p>
+    <p class="role">Frontend Developer</p>
     <p class="contact">
-      <a href="mailto:your_beautiful@yahoo.com">your_beautiful@yahoo.com</a> ·
+      <a href="mailto:code26beautifulyou@gmail.com">code26beautifulyou@gmail.com</a> ·
       Call or Text: (209) 503-0799 · Sutter Creek, CA<br>
       <a href="https://beautifulyouwebstudio.com" target="_blank">beautifulyouwebstudio.com</a> ·
       <a href="https://christihansen-png.github.io/eportfolio.christi/" target="_blank">Portfolio</a>
@@ -101,19 +104,55 @@
 
   <section>
     <h2>Professional Summary</h2>
-    <p>Frontend Software Engineer with a foundation built on twenty years of solving problems in fast-paced retail operations, now applied to building clean, functional web experiences. Currently completing Frontend Simplified, a project-based frontend development program covering HTML, CSS, JavaScript, and React, with a self-built portfolio to show for it. I debug relentlessly, learn fast, and bring the same show-up-and-figure-it-out instinct that carried a 20-year career to every line of code.</p>
+    <p>Frontend Developer with a foundation built on twenty years of solving problems in fast-paced retail operations, now applied to building clean, functional web experiences. Currently completing Frontend Simplified, a project-based frontend development program covering HTML, CSS, JavaScript, and React, with live, deployed projects to show for it. I debug relentlessly, learn fast, and bring the same show-up-and-figure-it-out instinct that carried a 20-year career to every line of code.</p>
   </section>
 
   <section>
     <h2>Technical Skills</h2>
     <ul>
       <li>JavaScript: functions, loops, conditionals, array methods (.map, .filter, .reduce, .sort), async/await</li>
-      <li>React: component-based UI development</li>
-      <li>HTML &amp; CSS: semantic structure, responsive styling, layout</li>
-      <li>Working with REST APIs and live data</li>
-      <li>Git &amp; VS Code for version control and development workflow</li>
-      <li>Debugging with browser DevTools</li>
+      <li>React: component-based UI, hooks (useState, useEffect), props, React Router</li>
+      <li>HTML &amp; CSS: semantic structure, responsive design, Flexbox &amp; Grid, media queries</li>
+      <li>REST APIs: fetching and displaying live data (YouTube Data API)</li>
+      <li>Firebase: Authentication and Firestore (CRUD)</li>
+      <li>Tools: Git &amp; GitHub, VS Code, Vite, npm, browser DevTools</li>
+      <li>Deployment: Vercel and GitHub Pages (custom domains), environment variables</li>
     </ul>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+
+    <div class="job">
+      <div class="job-meta">
+        <span class="job-title">ChristiTube: YouTube Clone | React, YouTube Data API</span>
+        <span><a href="https://youtube-clone-ten-psi-37.vercel.app/" target="_blank">Live Site</a> · <a href="https://github.com/christihansen-png/youtube-clone" target="_blank">GitHub</a></span>
+      </div>
+      <ul>
+        <li>YouTube-style React app with live videos, view counts, channel info and comments pulled from the YouTube Data API, with category filtering and React Router pages.</li>
+        <li>Secured the API key with environment variables and website restrictions; deployed on Vercel.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-meta">
+        <span class="job-title">Cozy Critters: Gift Shop Website | HTML, CSS, JavaScript</span>
+        <span><a href="https://cozycritters.beautifulyouwebstudio.com" target="_blank">Live Site</a> · <a href="https://github.com/christihansen-png/cozy-critters" target="_blank">GitHub</a></span>
+      </div>
+      <ul>
+        <li>Responsive sample shop site with a live e-gift card builder, a cart counter, wishlist toggles and a slide-in pitch that remembers when it's been closed (localStorage); hosted on GitHub Pages with a custom domain.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-meta">
+        <span class="job-title">Library: Online Bookstore | React, React Router</span>
+        <span><a href="https://library-app-thal.vercel.app/" target="_blank">Live Site</a> · <a href="https://github.com/christihansen-png/Library-app" target="_blank">GitHub</a></span>
+      </div>
+      <ul>
+        <li>Multi-page React bookstore showing books with titles, prices and cover images, sorting by price or rating, and a cart with quantities and totals; deployed on Vercel.</li>
+      </ul>
+    </div>
   </section>
 
   <section>
@@ -123,8 +162,8 @@
         <span class="job-title">Frontend Simplified — Frontend Development Program | In Progress</span>
       </div>
       <ul>
-        <li>Completed a project-based curriculum covering HTML, CSS, JavaScript, and React from the ground up.</li>
-        <li>Built a personal portfolio site from scratch, including real projects and live API integrations.</li>
+        <li>Project-based curriculum covering HTML, CSS, JavaScript, React, and Firebase from the ground up.</li>
+        <li>Built and deployed multiple projects, including a React YouTube clone powered by a live API.</li>
       </ul>
     </div>
   </section>
@@ -140,16 +179,17 @@
       <ul>
         <li>Launched a web design studio helping local businesses grow online with websites, e-gift cards and Google Business listings.</li>
         <li>Designed the studio's brand, including logo, business cards and website, built with HTML and CSS.</li>
+        <li>Built a sample gift shop website with HTML, CSS and JavaScript to pitch local shop owners, featuring a live e-gift card builder.</li>
       </ul>
     </div>
 
     <div class="job">
       <div class="job-meta">
-        <span class="job-title">Safeway / Albertsons | Multiple Leadership Roles</span>
+        <span class="job-title">Receiving Manager | Safeway / Albertsons</span>
         <span>2024 – Present</span>
       </div>
       <ul>
-        <li>Returned to Safeway/Albertsons in 2024, bringing a sharpened multi-format operations skill set back to the team.</li>
+        <li>Returned to Safeway/Albertsons in 2024 to lead receiving operations, bringing a sharpened multi-format operations skill set back to the team.</li>
       </ul>
     </div>
 
@@ -167,61 +207,16 @@
 
     <div class="job">
       <div class="job-meta">
-        <span class="job-title">Regional Trainer | Safeway / Albertsons</span>
+        <span class="job-title">Safeway / Albertsons | Multiple Leadership Roles</span>
         <span>2006 – 2022</span>
       </div>
       <ul>
-        <li>Trained new hires throughout the store and fuel stations, and retrained fuel station managers on updated standards and procedures.</li>
-      </ul>
-    </div>
-
-    <div class="job">
-      <div class="job-meta">
-        <span class="job-title">NorCal Recruiter Specialist | Safeway / Albertsons</span>
-        <span>2006 – 2022</span>
-      </div>
-      <ul>
-        <li>Led recruiting efforts across Northern California, building teams that stuck around.</li>
-      </ul>
-    </div>
-
-    <div class="job">
-      <div class="job-meta">
-        <span class="job-title">Inventory Manager | Safeway / Albertsons</span>
-        <span>2006 – 2022</span>
-      </div>
-      <ul>
-        <li>Owned inventory accuracy and shrink control, keeping shelves stocked and the books balanced.</li>
-      </ul>
-    </div>
-
-    <div class="job">
-      <div class="job-meta">
-        <span class="job-title">Night Crew Manager | Safeway / Albertsons</span>
-        <span>2006 – 2022</span>
-      </div>
-      <ul>
-        <li>Ran overnight operations, keeping the store running smoothly (and looking sharp) after hours.</li>
-      </ul>
-    </div>
-
-    <div class="job">
-      <div class="job-meta">
-        <span class="job-title">Store PIC (Person in Charge) | Safeway / Albertsons</span>
-        <span>2006 – 2022</span>
-      </div>
-      <ul>
-        <li>Stepped into full store leadership when it counted, keeping operations steady under pressure.</li>
-      </ul>
-    </div>
-
-    <div class="job">
-      <div class="job-meta">
-        <span class="job-title">Fuel Station Manager &amp; Operations Merchandiser | Safeway / Albertsons</span>
-        <span>2006 – 2022</span>
-      </div>
-      <ul>
-        <li>Managed fuel station operations and merchandising strategy to drive sales and efficiency.</li>
+        <li><strong>Regional Trainer:</strong> trained new hires across the store and fuel stations, and retrained fuel station managers across NorCal on updated standards and procedures.</li>
+        <li><strong>NorCal Recruiter Specialist:</strong> led recruiting efforts across Northern California, building teams that stuck around.</li>
+        <li><strong>Inventory Manager:</strong> owned inventory accuracy and shrink control, keeping shelves stocked and the books balanced.</li>
+        <li><strong>Night Crew Manager:</strong> ran overnight operations, keeping the store running smoothly after hours.</li>
+        <li><strong>Store PIC (Person in Charge):</strong> stepped into full store leadership when it counted, keeping operations steady under pressure.</li>
+        <li><strong>Fuel Station Manager &amp; Operations Merchandiser:</strong> managed fuel station operations and merchandising to drive sales and efficiency.</li>
       </ul>
     </div>
 

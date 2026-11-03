@@ -679,49 +679,25 @@ height = 80vw
 }
 
 
+/* 4 shapes, all on the right side (name and text are on the left) */
 .shape--0 {
   top: 15vh;
-  left: 5vw;
+  left: 85vw;
 }
 
 .shape--1 {
-  top: 15vh;
-  left: 50vw;
+  top: 38vh;
+  left: 91vw;
 }
 
 .shape--2 {
-  top: 15vh;
-  left: 80vw;
+  top: 62vh;
+  left: 85vw;
 }
 
 .shape--3 {
-  top: 50vh;
-  left: 5vw;
-}
-
-.shape--4 {
-  top: 50vh;
-  left: 50vw;
-}
-
-.shape--5 {
-  top: 50vh;
-  left: 80vw;
-}
-
-.shape--6 {
-  top: 80vh;
-  left: 5vw;
-}
-
-.shape--7 {
-  top: 80vh;
-  left: 50vw;
-}
-
-.shape--8 {
-  top: 80vh;
-  left: 80vw;
+  top: 85vh;
+  left: 91vw;
 }
 
 
@@ -756,6 +732,31 @@ large smart phones
     width: 100%;
   }
 
+  /* Tablets & phones: project cards show just the title + links */
+  .project {
+    padding: 24px 16px;
+  }
+  .project__description--para,
+  .project__description--sub-title {
+    display: none;
+  }
+  .project__description {
+    left: 0;
+    padding: 0 16px;
+    width: 100%;
+    max-width: none;
+    text-align: center;
+  }
+  .project__description--title {
+    font-size: 28px;
+    margin-bottom: 12px;
+  }
+
+  /* Hide the floating shapes so they don't cover text on small screens */
+  .shape {
+    display: none;
+  }
+
 }
 
 /* Small phones */
@@ -770,19 +771,6 @@ large smart phones
 
 .nav__link:first-child {
   display: none;
-}
-.project__description--para {
-  display: none;
-}
-.project__description {
-  left: 0;
-  padding: 0;
-  width: 100%;
-  text-align: center;
-}
-.project__description--sub-title {
-  margin-bottom: 8px;
-
 }
 .modal__half {
   padding: 40px;
