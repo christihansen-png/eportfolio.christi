@@ -755,8 +755,7 @@ large smart phones
   .project {
     padding: 24px 16px;
   }
-  .project__description--para,
-  .project__description--sub-title {
+  .project__description--para {
     display: none;
   }
   .project__description {
